@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ZXing.Net.Mobile.Forms" Version="2.4.1" />
+    <PackageReference Include="Nethereum.StandardTokenEIP20" Version="3.3.0" />
+    <PackageReference Include="Nethereum.HdWallet" Version="3.2.0" />
+    <PackageReference Include="Xamarin.Forms" Version="4.1.0.496342-pre2" />
+    <PackageReference Include="sameerIOTApps.Plugin.SecureStorage" Version="2.5.0" />
+    <PackageReference Include="Plugin.Share" Version="7.1.1" />
+    <PackageReference Include="Prism.DryIoc.Forms" Version="7.2.0.1347-pre" />
+    <PackageReference Include="Acr.UserDialogs" Version="7.0.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\" />
+    <Folder Include="Controls\" />
+    <Folder Include="Core\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="Models\" />
+    <Folder Include="Services\" />
+    <Folder Include="Converters\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\controls\Wallet.Controls\Wallet.Controls.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="WalletRoutes.cs" />
+  </ItemGroup>
+</Project>
